@@ -150,6 +150,10 @@ body {
   padding-bottom: 7%;
 }
 
+.col-md-12{
+  padding-bottom: 7%;
+}
+
 .col-md-12 > .lead {
   font-size: 1.2em;
 }
@@ -165,6 +169,10 @@ body {
 .featurette img {
   padding-top: 20px;
   cursor: pointer;
+}
+
+.no-image {
+  margin: 40px 0;
 }
 
 

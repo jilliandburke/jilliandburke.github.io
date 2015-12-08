@@ -67,39 +67,69 @@
           
 <!--          <hr class="featurette-divider">-->
 
-      <div class="row featurette">
+      <div class="row featurette sample-two">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+         <h2 class="featurette-heading">What is it? <!-- <span class="text-muted">See for yourself.</span> --></h2>
+          <p class="lead">This piece of work was an assignment for my PHP class. We were given a sample employee database and asked to implement CRUD functionality and search on it, have authorization and use of a session variable, client-side validation in JavaScript and have an extra feature of our choice. I decided to add sort by employee ID as my extra feature as well as using Bootstrap and FontAwesome to add a bit of polish to the interface.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="phpLogin.png" data-toggle="modal" data-target="#myModal1" alt="Login Page">
         </div>
       </div>
+          
+      <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="phpLogin.png" class="img-responsive">
+            </div>
+        </div>
+      </div>
+    </div>
           
           <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">The Main View</h2>
+          <p class="lead">To the right is the default view presented when the user logs in. This was made with using an HTML, Bootstrap and PHP. The buttons in the table will update or delete the corresponding record. Below the table are also next and previous buttons. There are currently twenty-five records per page. There is also a sort button so the user can sort either by ascending or descending employee ID. To the left is a navigation menu for the user to switch between views and tasks as well as a logout.</p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="col-md-5 ">
+          <img class="featurette-image img-responsive center-block" src="mainView.png" data-toggle="modal" data-target="#myModal2" alt="Default View">
         </div>
       </div>
+          
+      <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="mainView.png" class="img-responsive">
+            </div>
+        </div>
+      </div>
+    </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">To the right is the default view presented when the user logs in. This was made with an HTML table, bootstrap and PHP. The buttons in the table are for update and delete. Below the table are also next and previous buttons. There are currently twenty-five records per page. There is also a sort button so the user can sort either by ascending and descending employee ID. </p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="phpAddUpdate.png" data-toggle="modal" data-target="#myModal3" alt="Add and Update Views">
         </div>
       </div>
+          
+      <div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="phpAddUpdate.png" class="img-responsive">
+            </div>
+        </div>
+      </div>
+    </div>
 
       <hr class="featurette-divider">
 
@@ -115,6 +145,21 @@
     <script src="bootstrap/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+      function centerModal() {
+        $(this).css('display', 'block');
+        var $dialog = $(this).find(".modal-dialog");
+        var offset = ($(window).height() - $dialog.height()) / 2;
+        // Center modal vertically in window
+        $dialog.css("margin-top", offset);
+      }
+
+      $('.modal').on('show.bs.modal', centerModal);
+      $(window).on("resize", function () {
+          $('.modal:visible').each(centerModal);
+      });
+    </script>
     
   </body>
 </html>

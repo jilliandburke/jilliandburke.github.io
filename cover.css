@@ -142,7 +142,7 @@ body {
   letter-spacing: -1px;
 }
 
-.featurette {
+.featurette-total {
   padding-top: 100px;
 }
 
@@ -154,8 +154,17 @@ body {
   font-size: 1.2em;
 }
 
-.col-md-7 > .col-md-push-5 {
-  padding-top: 100px;
+.sample-two {
+  padding-top: 150px;
+}
+
+.col-md-7 > .lead {
+  font-size: 1.2em;
+}
+
+.featurette img {
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 

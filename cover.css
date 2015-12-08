@@ -150,6 +150,14 @@ body {
   padding-bottom: 7%;
 }
 
+.col-md-12 > .lead {
+  font-size: 1.2em;
+}
+
+.col-md-7 > .col-md-push-5 {
+  padding-top: 100px;
+}
+
 
 
 /*Contact form edits*/

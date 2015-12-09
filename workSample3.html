@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -39,22 +40,41 @@
               <nav>
                 <ul class="nav masthead-nav">
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="my-work.html">My Work</a></li>
-                  <li><a href="resume.html">My Resume</a></li>
-                  <li class="active"><a href="about-me.html">About Me</a></li>
+                  <li class="active"><a href="my-work.html">My Work</a></li>
+                  <li><a href="about-me.html">About Me</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </nav>
             </div>
           </div>
+        
           
-          <div class="bodyContent">
-            <h1>Hello, my name is Jillian Burke</h1>
+          <!-- START THE FEATURETTES -->
 
-            <p class="lead">I'm a Web Developer currently in my second year of the NSCC IT program. My skills include PHP, JavaScript, HTML5, CSS3, Drupal and Wordpress among others. <a href="my-work.html">Click here to check out some of my work!</a></p>
-            <p class="lead">My hobbies outside of web development are playing video games, listening to and playing music, and finding new computer or technology tips, tricks and gadgets to try out. I also pick up online courses in new types of technology whenever I have the time.</p>
-          </div>
+      <div class="row featurette featurette-total">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">JavaScript Sudoku</h2>
+          <p class="lead">This sudoku puzzle was made as an assignment for my JavaScript class. It originally is a case study from one of our first year HTML text books, which is where we were told the steps to make the table and got the image files from, but the task we had was to actually make it work via JavaScript. We were also tasked with including an extra feature, for which I included reset and a hint button that highlights any missplaced number red.</p>
         </div>
+        <div class="col-md-12">
+          <img class="featurette-image img-responsive center-block" src="sudoku.png" data-toggle="modal" data-target="#myModal" alt="Sudoku">
+        </div>
+      </div>
+          
+      <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="sudoku.png" class="img-responsive">
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- /END THE FEATURETTES -->    
+        
+
+       </div>
       </div>
     </div>
     
@@ -63,6 +83,21 @@
     <script src="bootstrap/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+      function centerModal() {
+        $(this).css('display', 'block');
+        var $dialog = $(this).find(".modal-dialog");
+        var offset = ($(window).height() - $dialog.height()) / 2;
+        // Center modal vertically in window
+        $dialog.css("margin-top", offset);
+      }
+
+      $('.modal').on('show.bs.modal', centerModal);
+      $(window).on("resize", function () {
+          $('.modal:visible').each(centerModal);
+      });
+    </script>
     
   </body>
 </html>

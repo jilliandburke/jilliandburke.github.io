@@ -1,7 +1,7 @@
-.sample-two, .col-md-12 {
+.sample-two, .featurette-total {
     position: relative;
     float: right;
-    margin-top: 50px;
+    margin-top: 0;
     z-index: -1;
 }
 

@@ -11,7 +11,7 @@
         margin-left: 0;
     }
     
-    .body {
+    html {
         background-attachment: fixed;
         background-position: left top;
     }

@@ -11,8 +11,11 @@
         margin-left: 0;
     }
     
-    html {
-        background-attachment: fixed;
+    body {
+        background: url(work-station-straight-on-view.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
     }
 }

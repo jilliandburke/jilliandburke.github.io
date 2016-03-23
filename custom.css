@@ -1,4 +1,4 @@
-.entireFeature, .featurette-total, .download {
+.entireFeature, .featurette-total {
     position: relative;
     float: right;
     margin-top: 0;
@@ -35,6 +35,6 @@
     }
     
     .download {
-        margin-top: 150px;
+        margin-top: 250px;
     }
 }

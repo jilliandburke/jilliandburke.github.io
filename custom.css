@@ -24,6 +24,10 @@
         background: transparent;
     }
     
+    .cover-container {
+        overflow-y: auto;
+    }
+    
 /*
     body {
         background: url(work-station-straight-on-view.jpg) no-repeat center center fixed; 

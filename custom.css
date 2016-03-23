@@ -23,7 +23,7 @@
     font-size: 2em;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1085px) {
     .row {
         margin-right: 0;
         margin-left: 0;
@@ -34,7 +34,7 @@
         background: transparent;
     }
     
-    .cover-container {
-        overflow-y: auto;
+    .download {
+        margin-top: 150px;
     }
 }

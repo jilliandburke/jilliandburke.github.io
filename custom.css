@@ -1,12 +1,16 @@
 .entireFeature, .featurette-total {
     position: relative;
     float: right;
-    margin-top: -100px;
+    margin-top: 0;
     z-index: -1;
 }
 
 .masthead {
-    position:relative;
+    background: url(work-station-straight-on-view.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 1085px) {

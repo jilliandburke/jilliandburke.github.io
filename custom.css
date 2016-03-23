@@ -13,7 +13,16 @@
     background-size: cover;
 }
 
-@media only screen and (max-width: 1085px) {
+.contact ul {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.download {
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 500px) {
     .row {
         margin-right: 0;
         margin-left: 0;
@@ -27,14 +36,4 @@
     .cover-container {
         overflow-y: auto;
     }
-    
-/*
-    body {
-        background: url(work-station-straight-on-view.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-*/
 }

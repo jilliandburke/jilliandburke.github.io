@@ -17,6 +17,11 @@
     .row {
         margin-right: 0;
         margin-left: 0;
+        overflow-y: auto;
+    }
+    
+    .masthead {
+        backface-visibility: hidden;
     }
     
 /*
